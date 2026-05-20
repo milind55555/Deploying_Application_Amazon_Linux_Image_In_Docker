@@ -2,8 +2,8 @@
 FROM amazonlinux:2023
 
 #Install apache server(httpd)
-RUN yum update -y
-RUN yum install httpd -y
+RUN dnf update -y
+RUN dnf install httpd -y
 
 #Copy index to deployment path
 COPY . /var/www/html/
